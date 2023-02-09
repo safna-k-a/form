@@ -24,11 +24,17 @@ form {
 @media screen and (max-width: 972px) and (min-width: 234px) {
     .blank {
         display: none;
+        padding: 0;
+        margin: 0;
     }
     .form {
         margin: 0;
     }
     .row > * {
         max-width: 92%;
+    }
+    body {
+        background-image: none;
+        background-color: rgb(126, 126, 255);
     }
 }
