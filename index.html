@@ -22,7 +22,7 @@
                 <form
                     action="../sample/index.html"
                     onsubmit="return validate()"
-                    class="col-md-5 row gap-3 border border-primary px-4 py-5 mt-5 ms-4 justify-content-center"
+                    class="col-md-6 row gap-3 border border-primary px-4 py-5 mt-5 ms-4 justify-content-center"
                 >
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label"
@@ -33,7 +33,7 @@
                                 type="text"
                                 class="form-control"
                                 id="text1"
-                                placeholder="FullName LastName"
+                                placeholder="Full Name"
                             />
                         </div>
                     </div>
@@ -79,16 +79,24 @@
                             <input type="text" id="persn" />
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-4 col-form-label"
-                            >What would you want to avail*:</label
-                        >
-                        <label>Boarding</label>
-                        <input type="checkbox" value="check" id="one" />
-                        <label>Fooding</label>
-                        <input type="checkbox" value="check" id="two" />
-                        <label>Sight Seeing</label>
-                        <input type="checkbox" value="check" id="three" />
+                    <div class="form-group row">
+                        <div class="col-sm-4">
+                            <label class="col-form-label"
+                                >What would you want to avail*:</label
+                            >
+                        </div>
+                        <div class="col-2">
+                            <label>Boarding</label>
+                            <input type="checkbox" value="check" id="one" />
+                        </div>
+                        <div class="col-2">
+                            <label>Fooding</label>
+                            <input type="checkbox" value="check" id="two" />
+                        </div>
+                        <div class="col-3">
+                            <label>Sight Seeing</label>
+                            <input type="checkbox" value="check" id="three" />
+                        </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label"
@@ -98,14 +106,18 @@
                             <input type="text" />
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group row">
                         <label class="col-sm-4 col-form-label"
                             >Terms and Condition*:</label
                         >
-                        <input type="radio" name="agree" id="first" />
-                        <label>I agree</label>
-                        <input type="radio" name="agree" id="scnd" />
-                        <label>disagree</label>
+                        <div class="col-3">
+                            <input type="radio" name="agree" id="first" />
+                            <label>I agree</label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="agree" id="scnd" />
+                            <label>disagree</label>
+                        </div>
                     </div>
                     <input
                         type="submit"
